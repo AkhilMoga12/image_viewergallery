@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.rect{
+    display: flex;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.text-card{
+    height: 100px;
+    width: 600px;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 350px;
+    overflow: hidden;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+#text-area{
+    font-size: xx-large;
+    font-family: 'Gill Sans';
+}
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(231, 225, 225);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.modal-content {
+    position: relative;
+    text-align: center;
+}
+.image-modal img {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+.image-caption {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Gill Sans';
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+}

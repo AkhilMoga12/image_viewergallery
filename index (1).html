@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery viewer</title>
+    <link rel="stylesheet" href="style.CSS">
+</head>
+    <body>
+        <div id="main">
+            <div class="box">
+                <div class="rect">
+                    <div id="sq1" class="card" onclick="imageText(1); openImageModal(arr[0], 'Girls')"></div>
+                    <div id="sq2" class="card" onclick="imageText(2); openImageModal(arr[1], 'Car')"></div>
+                    <div id="sq3" class="card" onclick="imageText(3); openImageModal(arr[2], 'House')"></div>
+                    <div id="sq4" class="card" onclick="imageText(4); openImageModal(arr[3], 'Tokyo Night')"></div>
+                </div>
+                <div id="text-area" class="text-card" style="background-color: white;"></div>
+                <div class="rect">
+                      <div id="sq5" class="card" onclick="imageText(5); openImageModal(arr[4], 'Pink Flowers')"></div>
+                    <div id="sq6" class="card" onclick="imageText(6); openImageModal(arr[5], 'White Flowers')"></div>
+                    <div id="sq7" class="card" onclick="imageText(7); openImageModal(arr[6], 'Camera')"></div>
+                    <div id="sq8" class="card" onclick="imageText(8); openImageModal(arr[7], 'City')"></div>
+                </div>
+            </div>
+        </div>
+      <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Full View">
+    <div id="imageCaption" class="image-caption"></div>
+  </div>
+</div>
+        <script src="script.js"></script>
+    </body>
+</html>
